@@ -1,27 +1,27 @@
 @echo off
 chcp 65001 > nul
 echo ========================================================
-echo   Jarvis Core - Ò»¼üÉÏ´« (Push) GitHub ºÍ ClawHub
+echo   Jarvis Core - ä¸€é”®ä¸Šä¼  (Push) GitHub å’Œ ClawHub
 echo ========================================================
 
 echo.
-echo [1/3] ÕıÔÚÀ­È¡×îĞÂ´úÂë (·ÀÖ¹³åÍ»)...
+echo [1/3] æ­£åœ¨æ‹‰å–æœ€æ–°ä»£ç  (é˜²æ­¢å†²çª)...
 git pull origin main
 
 echo.
-echo [2/3] ÕıÔÚÍÆËÍµ½ GitHub...
+echo [2/3] æ­£åœ¨æ¨é€åˆ° GitHub...
 git add .
-set /p commit_msg="ÇëÊäÈë¸üĞÂËµÃ÷ (Ö±½Ó»Ø³µÄ¬ÈÏ 'Auto update'): "
+set /p commit_msg="è¯·è¾“å…¥æ›´æ–°è¯´æ˜ (ç›´æ¥å›è½¦é»˜è®¤ 'Auto update'): "
 if "%commit_msg%"=="" set commit_msg=Auto update
 git commit -m "%commit_msg%"
 git push origin main
 
 echo.
-echo [3/3] ÕıÔÚ·¢²¼µ½ ClawHub...
+echo [3/3] æ­£åœ¨å‘å¸ƒåˆ° ClawHub...
 call clawhub publish . --slug jarvis-core --version 3.1.0
 
 echo.
 echo ========================================================
-echo   È«²¿²Ù×÷Íê³É£¡
+echo   å…¨éƒ¨æ“ä½œå®Œæˆï¼
 echo ========================================================
 pause
