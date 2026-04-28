@@ -1,0 +1,8 @@
+.git/
+.vscode/
+memory/
+self-improving/
+characters/
+.tiered-recall/
+*.bat
+*.ps1
