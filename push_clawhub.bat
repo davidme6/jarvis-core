@@ -1,15 +1,15 @@
 @echo off
 chcp 65001 > nul
 echo ========================================================
-echo   Jarvis Core - ä¸€é”®å‘å¸ƒ (Publish) åˆ° ClawHub
+echo   Jarvis Core - Ò»¼ü·¢²¼ (Publish) µ½ ClawHub
 echo ========================================================
 
 echo.
-echo æ­£åœ¨å‘å¸ƒåˆ° ClawHub...
+echo ÕıÔÚ·¢²¼µ½ ClawHub...
 call clawhub publish . --slug jarvis-core --version 3.1.0
 
 echo.
 echo ========================================================
-echo   ClawHub å‘å¸ƒå®Œæˆï¼
+echo   ClawHub ·¢²¼Íê³É£¡
 echo ========================================================
 pause
