@@ -1,15 +1,14 @@
 @echo off
-chcp 936 > nul
 echo ========================================================
-echo   Jarvis Core - 一键更�?(Pull) 脚本
+echo   Jarvis Core - Pull from GitHub
 echo ========================================================
 
 echo.
-echo 正在�?GitHub 拉取最新代�?..
+echo Pulling latest code from GitHub...
 git pull origin main
 
 echo.
 echo ========================================================
-echo   更新完成！`r
+echo   Update Complete!
 echo ========================================================
 pause

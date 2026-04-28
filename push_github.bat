@@ -1,23 +1,22 @@
 @echo off
-chcp 936 > nul
 echo ========================================================
-echo   Jarvis Core - 一键上�?(Push) �?GitHub
+echo   Jarvis Core - Push to GitHub
 echo ========================================================
 
 echo.
-echo [1/2] 正在拉取最新代�?(防止冲突)...
+echo [1/2] Pulling latest code to prevent conflicts...
 git pull origin main
 
 echo.
-echo [2/2] 正在推送到 GitHub...
+echo [2/2] Pushing to GitHub...
 git add .
-set /p commit_msg="请输入更新说�?(直接回车默认 'Auto update'): "
+set /p commit_msg="Enter commit message (Press Enter for 'Auto update'): "
 if "%commit_msg%"=="" set commit_msg=Auto update
 git commit -m "%commit_msg%"
 git push origin main
 
 echo.
 echo ========================================================
-echo   GitHub 推送完成！
+echo   GitHub Push Complete!
 echo ========================================================
 pause
