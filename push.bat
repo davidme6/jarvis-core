@@ -18,7 +18,7 @@ git push origin main
 
 echo.
 echo [3/3] 正在发布到 ClawHub...
-clawhub publish .
+clawhub publish . --slug jarvis-core
 
 echo.
 echo ========================================================
